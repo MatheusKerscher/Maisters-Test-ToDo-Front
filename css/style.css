@@ -1,0 +1,217 @@
+:root {
+  --background-color: #f8f9fa;
+  --color-primary: #0076ff;
+  --color-secondary: #ffffff;
+  --color-danger: #ff2c2c;
+  --color-success: #53fe46;
+  --color-border: #aaaaaa;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 0 10%;
+  background-color: var(--background-color);
+}
+
+main {
+  flex: 1 0 85%;
+  background-color: var(--background-color);
+}
+
+footer {
+  flex: 0 0 5%;
+  background-color: var(--background-color);
+}
+
+.modal-content {
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+.title {
+  color: var(--color-primary);
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-title {
+  color: var(--color-danger);
+  font-size: 30px;
+}
+
+.error-text {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.success-title {
+  color: var(--color-success);
+  font-size: 30px;
+}
+
+.success-text {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.button-create-task {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  padding: 12px 6px;
+  margin: 10px;
+  width: 200px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-create-task:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.input-task-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.input-task-label {
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-task {
+  border: 1px solid var(--color-border);
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-task:focus {
+  border: 2px solid var(--color-primary);
+}
+
+.button-save-task {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  padding: 10px 6px;
+  margin: 10px;
+  width: 70px;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-save-task:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.error-input-form {
+  color: var(--color-danger);
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#tasks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  width: 280px;
+  min-height: 180px;
+  padding: 8px 15px;
+  margin: 10px;
+  box-shadow: 2px 4px 4px 2px var(--color-border);
+}
+
+.task-status {
+  text-align: end;
+  margin-bottom: 0;
+}
+
+.task-title {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.task-desc {
+  margin-bottom: 2px;
+}
+
+.task-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.task-button {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: var(--color-secondary);
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.task-delete {
+  background-color: var(--color-danger);
+}
+
+.task-doing {
+  background-color: var(--color-primary);
+}
+
+.task-done {
+  background-color: var(--color-success);
+}
+
+.task-button:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.confirm-button {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: var(--color-secondary);
+  background-color: var(--color-danger);
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+}
